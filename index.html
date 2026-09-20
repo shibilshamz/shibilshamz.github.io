@@ -29,7 +29,7 @@
     "addressLocality": "Dubai",
     "addressCountry": "UAE"
   },
-  "knowsAbout": ["Python", "AI Agents", "Claude API", "Claude Haiku", "LLaMA", "Groq API", "n8n", "Workflow Automation", "FastAPI", "Flask", "React", "TypeScript", "Node.js", "Playwright", "Docker", "Caddy", "Google Sheets API", "Google Drive API", "MCP Protocol", "Supabase", "UiPath", "Process Automation", "SAP ERP", "VPS Administration"],
+  "knowsAbout": ["Python", "AI Agents", "Claude API", "Claude Haiku", "RAG", "Semantic Search", "Vector Databases", "Chroma", "ONNX Runtime", "Sentence Embeddings", "LLaMA", "Groq API", "n8n", "Workflow Automation", "FastAPI", "Flask", "React", "TypeScript", "Node.js", "Playwright", "Docker", "Caddy", "Google Sheets API", "Google Drive API", "MCP Protocol", "Supabase", "UiPath", "Process Automation", "SAP ERP", "VPS Administration"],
   "sameAs": [
     "https://github.com/shibilshamz",
     "https://linkedin.com/in/shibil-shamsudheen"
@@ -159,7 +159,7 @@
     <div style="padding: 40px 44px 40px 60px; border-right: 1px solid #e9dfd0;">
       <p style="margin: 0 0 14px; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #4d3520;">Find by capability</p>
       <p style="margin: 0; font-size: 15px; line-height: 2; color: #5c5044;">
-        <a href="#systems">AI agents</a> • <a href="#systems">Workflow automation</a> • <a href="#stack">n8n</a> • <a href="#stack">Python</a> • <a href="#stack">FastAPI</a> • <a href="#stack">Claude API</a> • <a href="#stack">Groq · LLaMA</a> • <a href="#stack">React</a> • <a href="#stack">TypeScript</a> • <a href="#stack">Data pipelines</a> • <a href="#stack">VPS &amp; deployment</a> • <a href="#stack">Docker</a> • <a href="#stack">MCP protocol</a> • <a href="#stack">SAP / process QC</a>
+        <a href="#systems">AI agents</a> • <a href="#systems">Workflow automation</a> • <a href="#stack">n8n</a> • <a href="#stack">Python</a> • <a href="#stack">FastAPI</a> • <a href="#stack">Claude API</a> • <a href="#stack">Groq · LLaMA</a> • <a href="#stack">React</a> • <a href="#stack">TypeScript</a> • <a href="#systems">RAG &amp; semantic search</a> • <a href="#stack">Vector search</a> • <a href="#stack">Data pipelines</a> • <a href="#stack">VPS &amp; deployment</a> • <a href="#stack">Docker</a> • <a href="#stack">MCP protocol</a> • <a href="#stack">SAP / process QC</a>
       </p>
     </div>
     <div style="padding: 40px 60px 40px 44px;">
@@ -227,6 +227,22 @@
 
       <article style="display: flex; flex-direction: column; gap: 14px;">
         <div style="position: relative; height: 260px; overflow: hidden; border-radius: 10px; background: #f4ece0;">
+          <figure class="imgslot"><img src="assets/cv-search.png" alt="CV Semantic Search — describe a role in plain English and get ranked candidates back" loading="lazy" decoding="async"></figure>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <p style="margin: 0; display: flex; align-items: center; gap: 8px; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #8a5a22;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #8a5a22;"></span>Live · Internal tool</p>
+          <h3 style="margin: 0; font-size: 24px; line-height: 1.25;">CV Semantic Search</h3>
+          <p style="margin: 0; font-size: 14.5px; color: #5c5044;">The CV pipeline keeps 14 fields and throws the text away. This keeps the text and searches it by meaning — a candidate who wrote &ldquo;settlement reconciliation&rdquo; comes back for a payments brief without ever using the word.</p>
+          <p style="margin: 0; font-size: 13px; color: #8d8378;">Section-level chunks · 384-d ONNX embeddings · Haiku ranks the top 5</p>
+          <p style="margin: 0; font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: #8d8378;">Python · FastAPI · Chroma · ONNX · Claude Haiku</p>
+          <div style="display: flex; gap: 18px; padding-top: 4px; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase;">
+            <a href="https://github.com/shibilshamz/cv-semantic-search" target="_blank" rel="noopener" style="border-bottom: 1px solid #4d3520; padding-bottom: 2px;">Source</a>
+          </div>
+        </div>
+      </article>
+
+      <article style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="position: relative; height: 260px; overflow: hidden; border-radius: 10px; background: #f4ece0;">
           <figure class="imgslot"><img src="assets/stylecode.png" alt="StyleCode app — Your personal style, decoded." loading="lazy" decoding="async"></figure>
         </div>
         <div style="display: flex; flex-direction: column; gap: 8px;">
@@ -258,10 +274,12 @@
         </div>
       </article>
 
-      <article style="background: #4d3520; border-radius: 10px; padding: 34px; display: flex; flex-direction: column; justify-content: center; gap: 16px;">
-        <h3 style="margin: 0; color: #ffffff; font-size: 26px; line-height: 1.2;">Have a process that should run itself?</h3>
-        <p style="margin: 0; color: rgba(255,255,255,0.68); font-size: 14.5px;">Send me the workflow. If it can be automated, I'll tell you how — and what it takes to put it in production.</p>
-        <a href="#contact" class="btn-amber" style="align-self: flex-start; background: #e8a54d; color: #4d3520; font-size: 11.5px; letter-spacing: 0.18em; text-transform: uppercase; padding: 14px 26px; border-radius: 40px;">Start a conversation</a>
+      <article style="grid-column: 1 / -1; background: #4d3520; border-radius: 10px; padding: 38px 40px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px;">
+        <div style="display: flex; flex-direction: column; gap: 10px; max-width: 64ch;">
+          <h3 style="margin: 0; color: #ffffff; font-size: 26px; line-height: 1.2;">Have a process that should run itself?</h3>
+          <p style="margin: 0; color: rgba(255,255,255,0.68); font-size: 14.5px;">Send me the workflow. If it can be automated, I'll tell you how — and what it takes to put it in production.</p>
+        </div>
+        <a href="#contact" class="btn-amber" style="flex-shrink: 0; background: #e8a54d; color: #4d3520; font-size: 11.5px; letter-spacing: 0.18em; text-transform: uppercase; padding: 14px 26px; border-radius: 40px; white-space: nowrap;">Start a conversation</a>
       </article>
 
     </div>
@@ -277,7 +295,7 @@
         <div style="display: grid; gap: 0;">
           <p style="margin: 0; display: grid; grid-template-columns: 110px 1fr; gap: 18px; padding: 12px 0; border-top: 1px solid #e9dfd0; font-size: 14.5px;"><span style="font-size: 12px; letter-spacing: 0.16em; color: #8d8378;">2021</span><span>B.Tech Chemical Engineering — Lovely Professional University</span></p>
           <p style="margin: 0; display: grid; grid-template-columns: 110px 1fr; gap: 18px; padding: 12px 0; border-top: 1px solid #e9dfd0; font-size: 14.5px;"><span style="font-size: 12px; letter-spacing: 0.16em; color: #8d8378;">2023–24</span><span>Chemist &amp; QC, Sharjah · Lab Assistant, Sterling Perfumes, Dubai</span></p>
-          <p style="margin: 0; display: grid; grid-template-columns: 110px 1fr; gap: 18px; padding: 12px 0; border-top: 1px solid #e9dfd0; border-bottom: 1px solid #e9dfd0; font-size: 14.5px;"><span style="font-size: 12px; letter-spacing: 0.16em; color: #8d8378;">2025–26</span><span>Trading Agent v3 · HR CV Pipeline (paid) · AI Job Hunter · StyleCode</span></p>
+          <p style="margin: 0; display: grid; grid-template-columns: 110px 1fr; gap: 18px; padding: 12px 0; border-top: 1px solid #e9dfd0; border-bottom: 1px solid #e9dfd0; font-size: 14.5px;"><span style="font-size: 12px; letter-spacing: 0.16em; color: #8d8378;">2025–26</span><span>Trading Agent v3 · HR CV Pipeline (paid) · AI Job Hunter · CV Semantic Search · StyleCode</span></p>
         </div>
       </div>
     </div>
@@ -324,6 +342,7 @@
           <li>Groq API / LLaMA 3.1</li>
           <li>Claude &amp; Gemini APIs</li>
           <li>MCP protocol</li>
+          <li>RAG (Chroma · ONNX MiniLM)</li>
           <li>n8n (self-hosted)</li>
           <li>Telegram Bot API</li>
         </ul>
