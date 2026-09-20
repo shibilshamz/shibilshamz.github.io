@@ -73,16 +73,12 @@
     [data-grid3] { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
     [data-navlinks] { display: none !important; }
     [data-mobilenav] { display: flex !important; }
-    [data-heroimg] { min-height: 320px !important; padding: 0 60px 44px !important; }
-    [data-heroimg] > div { inset: 0 60px 44px !important; }
     [data-footmain] { border-right: 0 !important; }
   }
   @media (max-width: 720px) {
     [data-grid3] { grid-template-columns: minmax(0, 1fr) !important; }
     [data-pad] { padding-left: 20px !important; padding-right: 20px !important; }
     [data-display] { font-size: 44px !important; }
-    [data-heroimg] { padding: 0 20px 34px !important; }
-    [data-heroimg] > div { inset: 0 20px 34px !important; }
     [data-searchbar] { grid-template-columns: minmax(0, 1fr) !important; }
     /* header crowds out the CV button at phone width — the design source
        had no rules below 720px, so these are added here */
@@ -138,8 +134,8 @@
     <a href="#contact" class="lnk-muted" style="color: #5c5044; white-space: nowrap;">Contact</a>
   </nav>
 
-  <section id="top" data-split style="background: #e8a54d; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.86fr); border-bottom: 1px solid rgba(77,53,32,0.30);">
-    <div data-pad style="padding: 66px 44px 60px 60px; display: flex; flex-direction: column; justify-content: center; gap: 22px;">
+  <section id="top" style="background: #e8a54d; border-bottom: 1px solid rgba(77,53,32,0.30);">
+    <div data-pad style="max-width: 1320px; margin: 0 auto; padding: 84px 60px 76px; display: flex; flex-direction: column; justify-content: center; gap: 24px;">
       <h1 data-display style="margin: 0; font-size: 62px; line-height: 1.08; letter-spacing: 0.01em; text-transform: uppercase; color: #4d3520;">AI Automation Builder</h1>
       <p style="margin: 0; max-width: 52ch; font-size: 16px; color: #3d2817;">Chemical engineer by training, perfumery lab professional by experience. I design, deploy and administer production automation on my own infrastructure — a plugin-based NSE trading platform, an automated job-search pipeline and client n8n workflows.</p>
       <div data-searchbar style="display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px; align-items: center; max-width: 660px; padding-top: 6px;">
@@ -158,12 +154,6 @@
           </div>
         </div>
         <button type="button" id="goto-go" class="btn-dark" style="background: #4d3520; color: #ffffff; border: 0; border-radius: 40px; padding: 15px 34px; font-size: 11.5px; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer;">Take me there</button>
-      </div>
-    </div>
-    <div data-heroimg style="position: relative; min-height: 480px; padding: 34px 44px 34px 0;">
-      <div style="position: absolute; inset: 34px 44px 34px 0; overflow: hidden;">
-        <!-- IMAGE SLOT: workspace or portrait photo. Replace the .mark span with <img src="..." alt="..."> -->
-        <figure class="imgslot"><span class="mark">S</span></figure>
       </div>
     </div>
   </section>
